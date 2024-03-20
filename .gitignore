@@ -1,0 +1,6 @@
+node_modules/
+config.env
+.idea
+helm-chart/Chart.lock
+pern/client/package-lock.json
+pern/server/package-lock.json

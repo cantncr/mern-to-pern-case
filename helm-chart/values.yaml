@@ -1,0 +1,35 @@
+replicaCount: 1
+
+backend:
+  image:
+    repository: "mcantuncer/imerit-backend"
+    tag: "v1.0"
+    pullPolicy: "IfNotPresent"
+  service:
+    type: "ClusterIP"
+    port: 5050
+  env:
+    DATABASE_URL: "postgres://user:password@pern-application-postgresql:5432/records"
+    DATABASE_HOST: pern-application-postgresql
+    DATABASE_NAME: records
+    DATABASE_USER: postgres
+frontend:
+  image:
+    repository: "mcantuncer/imerit-frontend"
+    tag: "v1.0"
+    pullPolicy: "IfNotPresent"
+  service:
+    type: "ClusterIP"
+    port: 80
+
+postgresql:
+  postgresqlDatabase: records
+  postgresqlUsername: postgres
+  existingSecret: pern-application-postgresql
+  global:
+    postgresql:
+      postgresqlDatabase: records
+      postgresqlUsername: postgres
+      existingSecret: pern-application-postgresql
+
+

@@ -1,0 +1,9 @@
+apiVersion: v2
+name: pern-application
+version: 1.0.0
+description: A Helm chart for the PERN stack application
+
+dependencies:
+  - name: postgresql
+    version: "13.2.1"
+    repository: "https://charts.bitnami.com/bitnami"
