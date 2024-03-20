@@ -6,8 +6,8 @@ This guide provides instructions for deploying the PERN stack application (Postg
 
 ## Prerequisites
 
-- Kubernetes cluster
-- Helm 3 installed
+- Kubernetes cluster (https://minikube.sigs.k8s.io/docs/start/)
+- Helm 3 installed (https://helm.sh/docs/intro/install/)
 - kubectl configured to communicate with your Kubernetes cluster
 - Docker images for the backend and frontend services pushed to a Docker registry
 
