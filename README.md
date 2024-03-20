@@ -18,9 +18,10 @@ This guide provides instructions for deploying the PERN stack application (Postg
 Clone this repository to your local machine:
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/cantncr/mern-to-pern-case.git
 ```
+
+Follow the following steps of your choice ⬇️
 
 ### Run with Docker
 
